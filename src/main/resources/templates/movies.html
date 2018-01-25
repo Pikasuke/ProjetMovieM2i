@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- <div th:text="${listFilms}"></div>  -->
+	<div th:each="film: ${listFilms}">
+		<!-- <p th:text="${film}">1</p> -->
+		
+		<!-- <p th:text="${film.id}">001</p> -->
+       <p th:text="${film.title}">Name</p>
+       <img th:src= "@{'http://image.tmdb.org/t/p/w185'+${film.posterPath}}"> Name </img>
+        <p th:text="${film.overview}">Overview</p>
+        <p th:text="${film.popularity}">Popularity</p>
+	</div>
+	<div> MOVIES </div>
+</body>
+</html>

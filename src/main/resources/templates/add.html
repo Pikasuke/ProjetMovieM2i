@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form  method="POST" action="/add">
+		<input type="number" id="voteCount" th:name="voteCount" min="0" max="10"/><label> voteCount</label>
+		<br></br>
+		<input type="number" id="movieDBid" th:name="movieDBid" min="0" max="10"/><label> movieDBid</label>
+		<br></br>
+		<input type="number" id="voteAverage" th:name="voteAverage" min="0" max="10"/><label> voteAverage</label>
+		<br></br>
+		<input type="text" id="title" th:name="title"/><label > title</label> <p th:text="${errornom}"></p>
+		<br></br>
+		<input type="number" id="popularity" th:name="popularity" min="0" max="10"/><label> popularity</label>
+		<br></br>
+		<input type="text" id="posterPath" th:name="posterPath"/><label> posterPath</label>
+		<br></br>
+		<input type="text" id="backdropPath" th:name="backdropPath"/><label> backdropPath</label>
+		<br></br>
+		<input type="checkbox" id="adult" th:name="adult"/><label> adult</label>
+		<br></br>
+		<input type="text" id="overview" th:name="overview"/><label> overview</label>
+		<br></br>
+		<input type="text" id="releaseDate" th:name="releaseDate"/><label> releaseDate</label>
+		<br></br>
+		<input type="submit"> Enregistrer</input>
+	
+	</form>
+	<div>ADD</div>
+</body>
+</html>

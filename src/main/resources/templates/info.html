@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+	
+		<p th:text="${UnFilm.id}">001</p>
+        <p th:text="${UnFilm.title}"> Name </p>
+        <img th:src= "@{'http://image.tmdb.org/t/p/w185'+${UnFilm.posterPath}}"> Name </img>
+       
+        <p th:text="${UnFilm.overview}"> Overview </p>
+        <p th:text="${UnFilm.popularity}"> Popularity </p>
+
+	<div> INFO </div>
+</body>
+</html>

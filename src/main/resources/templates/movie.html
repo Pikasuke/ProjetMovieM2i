@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+		<div th:text="${film.title}"></div>
+		<form method="POST" action="#" th:action="@{'/movies/'+${film.id}+'?_method=delete'}" >
+			<input type="submit" value="Delete"/>
+		</form>
+		
+		<a th:href="@{'/movies/'+${film.id}+'?_method=delete'}"> delete
+		</a>
+	<div> movie + id </div>
+</body>
+</html>
